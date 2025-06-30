@@ -58,7 +58,20 @@ function playRound(user, com) {
     }
 }
 
-const humanSelection = userchoice();
-const computerSelection = comchoice();
+function playMatch() {
+    for (let i = 0; i <= 5; i++) {
+        console.log(`Round ${i}`);
+        playRound(userchoice(), comchoice());
+        console.log(`Human Score: ${humanScore}, Computer Score: ${computerScore}`);
+    }
+    console.log(`Human Score: ${humanScore}, Computer Score: ${computerScore}`);
+    if (humanScore > computerScore) {
+        console.log("You win the match!");
+    } else if (humanScore < computerScore) {
+        console.log("You lose the match!");
+    } else {
+        console.log("The match is a draw!");
+    }
+}
 
-playRound(humanSelection, computerSelection);
+playMatch();
