@@ -1,0 +1,53 @@
+body {
+    height: 100vh;
+    font-size: 1.5rem;
+    background-color: whitesmoke;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rps-btn {
+    user-select: none;
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 1s;
+    
+}
+.rps-btn:hover {
+    background-color: rgb(0, 0, 204);
+}
+.score {
+    display: flex;
+    vertical-align: center;
+    line-height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    border-radius: 25px;
+}
+
+#win {
+    background-color: rgb(100, 221, 89);
+}
+#draw {
+    background-color: rgb(89, 188, 221);
+}
+#lose {
+    background-color: rgb(221, 89, 89);
+}
